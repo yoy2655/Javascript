@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    var score;
+    var num=prompt("홍길동의 점수를 입력하세요",100);
+    num=parseInt(num);//문자열을 정수로 바꿔 다시 num 대입한다.
+
+    if(num>=90)
+    score="A학점";
+    else if(num>=80)
+    score="B학점";
+    else
+    score="F학점";
+
+    document.write(score);
+</script>
+</body>
+</html>
+</body>
+</html>
+
+
