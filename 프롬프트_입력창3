@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+   <script>
+      var money=0;
+      var cafe=prompt("무슨 커피 드릴까요?");
+
+      switch(cafe){
+        case "아메리카노":
+        case "아이스 아메리카노":
+            money=4000;
+            break;
+        case "카페라떼":
+            money=5000;
+            break;
+
+        default:
+            document.write(cafe+"없다");
+
+      }
+      if(money!=0){
+        document.write(cafe+"는"+money+"원이다");
+      }
+
+        //아메리카노, 아이스 아메리카노 ->4000
+        //카페라떼 ->5000
+
+        //(아메리카노)는 (4000)원이다
+
+
+
+   </script>
+</body>
+</html>
