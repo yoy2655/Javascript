@@ -17,7 +17,20 @@
     document.write(y+"<br>");
     document.write(z+"<br>");
 
-    
+    var a=36;
+    var b=35;
+
+    document.write((a!=b)+"<br>");//true
+    document.write((a==b)+"<br>");//false
+    document.write((a>=b)+"<br>");//true
+    document.write((a<=b)+"<br>");//false
+
+    var c=true, d=false;
+    document.write((c&&d)+"<br>");  //false
+    document.write((c||d)+"<br>");  //true
+
+    var e=5, f=10;
+    document.write((e>f)?e:f);//false->출력:f값인 10
 </script>
 </body>
 </html>
