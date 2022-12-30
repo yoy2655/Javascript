@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    document.write("<h3>Welcome!</h3>");
+    document.write("안녕하세요 <br>");
+    document.write("<mark> 12월 30일 </mark>");
+</script>
+</body>
+</html>
+</body>
+</html>
