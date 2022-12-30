@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    var ret = prompt("이름을 입력하세요", "황기태");//프롬프트:입력창
+    if(ret == null) { 
+        document.write("이름 없다");
+    // 취소 버튼이나 다이얼로그를 닫은 경우
+    }
+    else if(ret == "") {
+        document.write("취소");
+    // 문자열 입력 없이 확인 버튼 누른 경우
+    }
+    else {
+        document.write(ret);
+    // ret에는 사용자가 입력한 문자열
+    }
+
+</script>
+</body>
+</html>
+</body>
+</html>
