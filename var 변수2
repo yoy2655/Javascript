@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+  var x=100;//전역변수
+  function z(){
+    var x=1;
+    document.write(x +"<br>");  //1
+    document.write(this.x);     //100
+  }      
+  z();
+</script>
+</body>
+</html>
+</body>
+</html>
