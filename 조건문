@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    //NaN : 수가 아님을 뜻함(Not a Number)
+    var x=5, y=3;
+    var big = (x>y) ? x : y; // (x>y)가 true이므로 x 값 5가 big에 대입된다.
+
+    document.write(big);    //5
+
+</script>
+</body>
+</html>
+</body>
+</html>
