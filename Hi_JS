@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    document.write("<h3>Hi</h3>");
+    document.write("<strong>JS</strong>");
+</script>
+</body>
+</html>
+</body>
+</html>
