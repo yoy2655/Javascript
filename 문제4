@@ -29,6 +29,28 @@
     var n2=prompt("입력");
     var m=eval(n2);
     document.write(m);
+   //3-1번.
+   var a=prompt("수1");
+   var b=prompt("수2");
+   var c=prompt("연산자");
+
+   a=parseFloat(a);  //parseDouble()이 없다!
+   b=parseFloat(b);
+   
+   switch(c){
+    case "+":
+        document.write(eval(a+b));
+        break;
+    case "-":
+        document.write(eval(a-b));
+        break;
+    case "*":
+        document.write(eval(a*b));
+        break;
+    case "/":
+        document.write(eval(a/b));
+        break;
+   }
     
 
     
