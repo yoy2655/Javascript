@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    function change(obj.color){
+        obj.style.color=color;  //red색을 넣어서 글자색을 변경하게 만든다(this 대신 obj.style..사용)
+    }
+</script>
+</head>
+<body>
+    <button onclick="change(this,'red')">버튼</button>  
+    <!--여기서 this는 버튼이다-->
+    <div onclick="change(this,'orange')">클릭하면 변경된다</div>
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
