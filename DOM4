@@ -9,6 +9,9 @@
 <body>
 <script>
     //태그이름으로 찾기_DOM 트리에서 DOM객체 찾는 방법
+    //1.id로 찾기 : document.getElementById()
+    //2.태그이름으로 찾기 : document.getElementsByTagName()
+    //3.class속성으로 찾기 : document.getElementsByClassName()
     function ch(){
         var n=document.getElementsByTagName("span");    //..id는 단수, ..tagname은 복수개이다.
         for(var i=0; i<n.length; i++){
