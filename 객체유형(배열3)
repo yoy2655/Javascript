@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    function show(n){
+        document.write(n+"<br>");
+    }
+</script>
+</head>
+<body>
+<script>
+        var ary=new Array("user1","user2","user3");
+        var ary1=new Array("user4");
+        var n;
+
+        n=ary.concat(ary1);
+        show(n);
+
+        n=ary.join("@@");
+        show(n);
+
+        n=ary.slice(1,2);
+        show(n);
+</script>
+</body>
+</html>
+</body>
+</html>
