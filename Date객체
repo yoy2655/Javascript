@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    var now=new Date();         //현재 2017년 5월 15일 저녁 8시 48분이라면
+    var date=now.getDate();     //오늘 날짜. date = 15
+    var hour=now.getHours();
+    var month=now.getMonth();
+
+    document.write(date+"<br>");
+    document.write(hour+"<br>");    
+</script>
+</body>
+</html>
+</body>
+</html>
