@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    for(var i=10; i<=50; i+=10){
+        document.write("<span ");
+        document.write("style='font-size:"+i+"px'>");
+        document.write(i+"px");
+        document.write("</span>");
+    }    
+</script>
+</body>
+</html>
+</body>
+</html>
