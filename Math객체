@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    var n=new Array();
+        for(i=0;i<=10;i++){
+            n[i]=(Math.random()*100)+1;
+            var m=Math.floor(n[i]); //소수점을 버린다
+            document.write(m+"<br>");
+        }
+        var max=n[0];
+        for(var i=1;i<10;i++){
+            if(n[i]>max){
+                max=n[i];
+            }
+        }
+        document.write("최대값"+max);
+</script>
+</body>
+</html>
+</body>
+</html>
