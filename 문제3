@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+        var now=new Date();
+        if(now.getHours()<12)
+            document.body.style.background='yellow';
+        else
+            document.body.style.background='green';
+
+            document.write(now.getHours()+"시"+now.getMinutes()+"분");
+</script>
+</body>
+</html>
+</body>
+</html>
