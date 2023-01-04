@@ -8,6 +8,7 @@
 </head>
 <body>
 <script>
+    //이미지 동적제어
     function ch(){
         var pp=document.getElementById("rirakcuma1");
         //var n=pp.innerHTML;
