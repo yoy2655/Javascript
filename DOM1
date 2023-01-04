@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <p id="firstP"
+       style="color:blue;"
+       onclick="this.style.color='teal'">
+       이것은
+       <span style="color: red">문장입니다.</span>
+    </p>
+<script>
+    var n=document.getElementById("firstP");//id가 firstP인 태그의 DOM을 찾는다(DOM 객체 리턴)
+    //n값에 이것은을 넣는 것과 같다
+
+    var m=n.tagName+"\n";   //이것은의 tagName은 p이다
+
+    m+=n.id;    //m=m+n.id; ->n.id는 firstP이다
+    alert(m);
+
+    m+=n.innerHTML; //innerHTML의 뜻은 콘텐츠이다-> p태그 안에 들어있는 모든것 
+    alert(m);       //-->이것은 <span style="color: red">문장입니다.</span>
+
+    m+=n.style.color;   //blue출력(이것은)
+    alert(m);
+
+    m+=n.childElementCount; //p태그 안에 있는 자식은 1개이다.
+    alert(m);
+    
+</script>
+</body>
+</html>
+</body>
+</html>
