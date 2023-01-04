@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    function ch(){
+        var n=document.getElementById("java");  //span태그의 콘텐츠인 스크립트를 알아내는것이다.
+        n.style.color='black';
+        n.style.border="3px dotted deeppink";
+        n.style.fontSize="30px";
+        n.style.display="block";
+    }
+</script>
+<p style="color:coral"> 자바
+    <span id="java" style="color:green">스크립트</span></p>
+    <!--p태그는 자바, span은 스크립트-->
+
+    <input type="button" value="버튼" onclick="ch()">
+</body>
+</html>
+</body>
+</html>
