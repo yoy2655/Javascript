@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    //1번.
+        for(var i=0; i<5; i++){
+            for(var j=0; j<i+1; j++){
+            document.write("*");
+            }
+            document.write("<br>");
+        }
+    //2번.
+   var pw="password";   //먼저 임의로 값을 가지고 있어야 한다
+   while(true){
+    var n=prompt("입력해라");
+    if(pw==n){
+        alert("통과");
+        break;
+    }
+   }
+
+    //3번.
+    var n2=prompt("입력");
+    var m=eval(n2);
+    document.write(m);
+    
+
+    
+</script>
+</body>
+</html>
+</body>
+</html>
