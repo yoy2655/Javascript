@@ -9,6 +9,7 @@
 <body>
 <script>
     function ch(){
+        //자바스크립트 css동적 변경
         var n=document.getElementById("java");  //span태그의 콘텐츠인 스크립트를 알아내는것이다.
         n.style.color='black';
         n.style.border="3px dotted deeppink";
