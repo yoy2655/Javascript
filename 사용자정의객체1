@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    function a(){
+        return this.num;    //일종의 전역변수(mon.num=30000를 가리킨다)
+    }
+
+    function plus(money){
+        this.num+=money;
+    }
+
+    function minus(money){
+        this.num=money;
+        return money;
+    }
+    var mon=new Object();   //사용자 정의 객체
+    mon.name="김길동";
+    mon.id="123";
+    mon.num=30000;  //초기값
+
+    mon.a=a;
+    mon.plus=plus;
+    mon.minus=minus;    //메소드 작성(괄호를 안쓴다)
+                        //아직 함수호출 안했다
+
+</script>
+</head>
+<body>
+<script>
+    //*사용자 정의 객체 만들기
+    //new Object()이용
+    //리터럴 표기법 이용
+
+    document.write(mon.name);
+    mon.plus(10000);    //함수호출했다
+    document.write(mon.num+"<br>");//40000
+    mon.minus(5000);
+    document.write(mon.num);    //5000
+
+
+</script>
+</body>
+</html>
+</body>
+</html>
