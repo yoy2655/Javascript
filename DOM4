@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    //태그이름으로 찾기_DOM 트리에서 DOM객체 찾는 방법
+    function ch(){
+        var n=document.getElementsByTagName("span");    //..id는 단수, ..tagname은 복수개이다.
+        for(var i=0; i<n.length; i++){
+            var num=n[i];
+            num.style.color="orange";
+            num.style.fontSize="30px";
+        }
+    }
+</script>
+<button onclick="ch()">눌러!!</button>
+    이 노래는 <span>유명</span>해지지 않았으면 해
+    이 노래는 유명해지지 않았으면 해
+    사람들이 <span>가사를 못 외웠으면 해</span>
+    에라라라라 에베베베 에베베베
+    이 <span>노래는</span> 유명해지지 않았으면 해
+    이 노래는 유명해지지 않았으면 해
+</body>
+</html>
+</body>
+</html>
