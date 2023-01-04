@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+    function ch(){
+        var pp=document.getElementById("rirakcuma1");
+        //var n=pp.innerHTML;
+        //alert(n);
+        //document.write(n);
+        
+        pp.innerHTML="리락쿠마1 <img src='C:/Users/soldesk/Desktop/A221122/리락쿠마1.jpg'>리락쿠마1";
+        //콘텐츠에 넣는다
+    }
+</script>
+<p id="rirakcuma1" style="color:brown"onclick="ch()">
+    클릭<span style="color:red">해보세요</span></p>
+</body>
+</html>
+</body>
+</html>
