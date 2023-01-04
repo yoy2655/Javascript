@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    function a(){
+        var r=eval("1*2+3");
+        document.write(r+"<br>");
+
+        var n=parseInt("11");
+        document.write(n);
+
+        m=parseInt("hi");
+        if(isNaN(m)){   //true
+            document.write("숫자가 아니다");    
+        }
+    }
+</script>
+</head>
+<body>
+<script>
+      a();  
+</script>
+</body>
+</html>
+</body>
+</html>
