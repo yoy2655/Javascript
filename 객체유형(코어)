@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+<script>
+        //자바스크립트 객체 유형
+        //1. 코어(중심이 되는 객체:Array,Date,String, Math타입 등..)
+        //2. DOM
+        //3. 브라우저(BOM)
+
+        var n=new Date();
+        document.write(n+"<br>");
+
+        var str=new String("자바스크립트");
+        document.write(str.length);
+        document.write(str);
+</script>
+</body>
+</html>
+</body>
+</html>
