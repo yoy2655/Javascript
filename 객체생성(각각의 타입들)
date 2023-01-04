@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+
+    /*
+    var musin=new Object();
+    music.title="aa";
+    music.singer="bb";
+    music.price=300000;
+
+    var music={
+        title:"aa",
+        singer:"bb",
+        price:300000
+    }
+    */
+    function Music(){
+        this.title="aa";
+        this.singer="bb";
+        this.price=300000;
+    }
+</script>
+</head>
+<body>
+<script>
+    var music=new Music();
+    document.write(music.title+"<br>"); //aa
+    document.write(music.singer+"<br>"); //bb
+    document.write(music.price+"<br>"); //300000
+
+</script>
+</body>
+</html>
+</body>
+</html>
