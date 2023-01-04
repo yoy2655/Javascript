@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    //프로토타입으로 객체 만들기
+    function mon(name,id,n){
+      this.name=name;
+      this.id=id;
+      this.n=n;
+
+      this.a=function(){
+        return this.n;
+      }
+      this.plus=function(money){
+        this.n+=money;
+      }
+      this.minus=function(money){
+        this.n-=money;
+      }
+    }
+</script>
+</head>
+<body>
+<script>
+   var aa=new mon("user1","123",30000); //생성자
+   document.write(aa.name);
+
+   aa.plus(10000);
+   document.write(aa.a()+"<br>");   //40000
+
+   aa.minus(10000);
+   document.write(aa.a()+"<br>");   //30000
+</script>
+</body>
+</html>
+</body>
+</html>
