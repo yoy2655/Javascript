@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    //violet, width:43m, display:block형태로 변경
+    function cl(){
+        var n=document.getElementById("aa");
+        n.style.color="violet";
+        n.style.fontSize="4em";
+        
+
+    }
+</script>
+</head>
+<body>
+    <div>자신이 하는 일을 <span id="aa">좋아하게</span> 되는 것</div>
+    <input type="button" value="변경" onclick="cl()">
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
