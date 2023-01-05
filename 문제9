@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    function ch(color){
+        var m=document.getElementById("aa");
+        m.style.backgroundColor="pink";
+    }
+    function ch2(){
+        var n=document.getElementById("parent");
+        n.style.backgroundColor='blue';
+    }
+    
+</script>
+</head>
+<body id="parent">
+    <div id="aa" ondblclick="ch('pink')" onmouseout="ch2('blue')">색 이벤트</div>
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
