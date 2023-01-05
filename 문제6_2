@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    //2.
+function res(){
+ var a=document.getElementById("k1");
+ var a2=eval(3+4);
+ a.innerHTML=a2;
+}
+ function res2(){
+ var b=document.getElementById("k2");
+ var b2=eval(5+20+60);
+ b.innerHTML=b2;
+}
+ function res3(){
+ var c=document.getElementById("k3");
+ var c2=eval(20/5-4*5);
+ c.innerHTML=c2;
+}
+</script>
+</head>
+<body>
+    <!--1.-->
+    <h2>라면을 끓이는 순서</h2>
+    <hr>
+    <ol type='A' onclick="this.style.backgroundColor='yellow'">
+        <li>물을 끓인다.</li>
+        <li>라면과 스프를 넣는다.</li>
+        <li>계란을 넣는다.</li>
+        <li>얌얌맛있게 먹는다.</li>        
+</ol>
+<!--2.-->
+<h2>계산해봅시다.</h2>
+<hr>
+<ul>
+    <li>3 + 4 = <label onclick="res()" id="k1">답</label></li>
+    <li>5 + 20 + 60 = <label onclick="res2()" id="k2">답</label></li>
+    <li>20 / 5 - 4 * 5 = <label onclick="res3()" id="k3">답</label></li>
+</ul>
+
+</ul>
+<script>
+    //1.
+     var n=document.getElementsByTagName("li");
+     for(var i=0; i<4; i++){  //복수개니까 for문을 써준다
+        var a=n[i];
+        a.style.color='green';
+      }
+
+</script>
+
+
+</body>
+</html>
+</body>
+</html>
