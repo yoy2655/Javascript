@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+</script>
+</head>
+<body>
+    <h2>Q. 컴퓨터 분야 뭐가 관심있니?</h2>
+    <input type="button" value="답보기" onclick="cc()">
+    <br>
+    <p id="vv"></p>
+    <h2>Q. 뭐 먹고싶니?</h2>
+    <input type="button" value="답보기" onclick="dd()">
+    <br>
+    <p id="vs"></p>
+<script>
+    function cc(){
+        var v=document.getElementById("vv");
+        var n=document.createElement("div");
+        n.innerHTML="서버";
+        vv.appendChild(n);
+
+        n.onclick=function(){
+            var p=this.parentElement;   //this는 n이고 n의 parent는 p태그
+            //p태그(div의 부모태그)
+            p.removeChild(this);
+        }
+    }
+    function dd(){
+        var v2=document.getElementById("vs");
+        var n2=document.createElement("div");
+        n2.innerHTML="자장면";
+        vs.appendChild(n2);
+
+        n2.onclick=function(){
+            var p2=this.parentElement;   //this는 n이고 n의 parent는 p태그
+            //p태그(div의 부모태그)
+            p2.removeChild(this);
+        }
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
