@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    //익명함수를 제일 많이씀4가지있음
+    //1.html태그
+    //<p id="p" onmouseover="this.style.backgroundColor='orchid'"
+	//마우스 올리면 orchid 색으로 변경
+    //</p>
+
+    //2.이벤트 리스너 프로퍼티
+    //function over() {
+	//p.style.backgroundColor="orchid";
+    //}
+    //p.onmouseover = over;
+
+    //3.addEventListener()
+    //p.addEventListener("mouseover", over); 
+
+    //4. 익명 함수 이용
+    //p.onmouseover = function () { this.style.backgroundColor="orchid"; }; 
+
+    //5. 익명 함수 이용
+    //p.addEventListener("mouseover", 
+	//function () { this.style.backgroundColor="orchid"; } 
+    //);
+
+</script>
+</head>
+<body>
+    <p id="p">마우스 올려보기</p>   <!--p태그는 Paragraph tag!!-->
+    <button onclick="f(event)">클릭해요</button>
+<script>
+    function f(e){  //현재발생한 이벤트 객체
+        //alert(e.type);  //type:이벤트 종류
+        alert(e.target);  //target:이벤트를 발생시키는 객체
+    }
+    document.getElementById("p").onmouseover=f; //타입에 대한 이벤트 종류는 click이다, mouseover이다...출력
+    
+</script>
+</body>
+</html>
+</body>
+</html>
