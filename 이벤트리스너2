@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+    //이벤트 리스너 만들기
+    //3가지 방법
+    //1. html 태그 내에 작성
+    //2. DOM 객체의 이벤트 리스너 프로퍼티에 작성
+    //3. DOM 객체의 addEventListener() 메소드 이용
+    function init(){
+        p=document.getElementById("p");
+        p.onmouseover=over; //over 함수를 onmouseover리스너로 등록
+        p.onmouseout=out;
+    }
+    function over(){
+        p.style.backgroundColor="pink";
+    }
+    function out(){
+        p.style.backgroundColor="white";
+    }
+</script>
+</head>
+<body onload="init()">  <!--문서가 완전히 로드 되었을 때 호출-->
+    <p id="p">색 변경</p>
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
