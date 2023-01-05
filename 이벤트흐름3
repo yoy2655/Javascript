@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    function on(){
+       var c=document.getElementsByName("city"); //-->c[0]c[1]c[2]
+       for(var i=0; i<c.length; i++){
+        if(c[i].checked==true)
+         n=c[i];
+       }
+       if(n!=null)
+       alert(n.value+"을 선택했다");
+
+       else
+       alert("아무것도 선택안함");
+    }
+</script>
+</head>
+<body> 
+    <form>
+   <input type="radio" name="city" value="seoul">서울
+   <input type="radio" name="city" value="busan">부산
+   <input type="radio" name="city" value="chunchen">춘천
+   <input type="button" value="체크" onclick="on()">
+</form>
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
+
