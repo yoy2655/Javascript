@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+   var sum=0;
+   function score(obj){
+    if(obj.checked){
+        sum+=parseInt(obj.value);
+    }
+    document.getElementById("tot").value=sum;   //input type이니까 .value를 해준다
+   }
+</script>
+</head>
+<body> 
+    <form>
+   <input type="checkbox" name="ch" value="80" onclick="score(this)">자바 80점
+   <input type="checkbox" name="ch" value="50" onclick="score(this)">HTML 50점
+   <input type="checkbox" name="ch" value="90" onclick="score(this)">CSS 90점<br>
+
+   총합<input type="text" id="tot" value="0">
+</form>
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
+
