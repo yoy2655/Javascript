@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+ <style>
+    button{
+        width:100px;
+        margin-right:30px;
+    }
+    input{
+       display:inline-block;
+       width:500px;
+    }
+ </style>
+<script>
+       
+</script>
+</head>
+<body>
+    <h3>계산기</h3>
+    <hr>
+    <input type="text" value="0" id="dis"/>
+    
+    <table>
+    <tr>
+        <td><button onclick="clearf()">c</button></td>
+        <td><button onclick="re()">=</button></td>
+    </tr>
+    <tr>
+        <td><button value="7" name="num">7</button></td>
+        <td><button value="8" name="num">8</button></td>
+        <td><button value="9" name="num">9</button></td>
+        <td><button value="/" name="op">/</button></td>
+    </tr>
+    <tr>
+        <td><button value="4" name="num">4</button></td>
+        <td><button value="5" name="num">5</button></td>
+        <td><button value="6" name="num">6</button></td>
+        <td><button value="*" name="op">*</button></td>
+    </tr>
+    <tr>
+        <td><button value="1" name="num">1</button></td>
+        <td><button value="2" name="num">2</button></td>
+        <td><button value="3" name="num">3</button></td>
+        <td><button value="-" name="op">-</button></td>
+    </tr>
+    <tr>
+        <td><button value="0" name="num">0</button></td>
+        <td><button value="+" name="op" >+</button></td>               
+    </tr>
+</table>
+<script>
+     var n=document.getElementsByName("num");
+        var o=document.getElementById("op");
+        var disp=document.getElementById("dis");
+        var sum="";
+        for(var i=0; i<n.length; i++){
+            n[i].addEventListener("click",function(){
+                var c=parseInt(this.value); //this.value는 button의 value 값을 말한다
+                disp.value=c;
+                sum+=c;
+            });
+        }
+        for(var i=0; i<o.length; i++){
+            o[i].addEventListener("click",function(){
+                var c=this.innerHTML; //this.value는 button의 value 값을 말한다
+                sum+=c;
+            });
+        }
+
+        function clearf(){
+            disp.value=0;
+            sum=0;
+        }
+        function re(){
+            disp.value=eval(sum);
+        }
+</script>
+</body>
+</html>
+</body>
+</html>
