@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body id="Body">
+    <button onclick="ch()">배경색 바꾸기</button>
+<script>
+    function ch(){
+        var a=document.getElementById("Body");
+        var str=["red","orange","yellow","green","blue"];
+
+        for(var i=0; i<str.length; i++){
+            var n=parseInt(Math.random()*5);    //0~4
+            a.style.backgroundColor=str[n];
+        }
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
