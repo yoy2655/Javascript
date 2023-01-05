@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+   //이벤트 흐름
+   //이벤트가 흘러가는 과정
+   //1.캡쳐 단계(capturing phase):위에서 아래로(window->document->html->body->form->input)
+   //2.버블 단계(bubbling phase) :아래에서 위로(window<-document<-html<-body<-form<-input)
+
+function cal(){
+    var n=document.getElementById("a");
+    var m=document.getElementById("b");
+
+    m.value=eval(n.value);  //식을 답에 값을 저장한다.
+}
+</script>
+</head>
+<body>
+    식<input type="text" id="a"><br>
+    답<input type="tel" id="b">
+    계산 <input type="button" value="계산" onclick="cal()">
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
