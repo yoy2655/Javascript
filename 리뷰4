@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    var c=new Date();
+    document.write(c+"<br>");
+
+    //년,월,일 각각 출력
+    var y=c.getFullYear();
+    var m=c.getMonth()+1;
+    var d=c.getDate();
+
+    document.write(y+"년 "+m+"월 "+d+"일<br>");
+</script>
+</head>
+<body>
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
