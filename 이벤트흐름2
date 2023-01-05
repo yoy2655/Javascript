@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    function ch(obj){
+        alter("이름입력해!");
+        obj.focus();    //obj에 다시 포커스 맞춤
+    }
+</script>
+</head>
+<body onload="document.getElementById('a').focus()">    <!--focus():이름에 포커스를 맞춤-->
+    <form>
+    이름 <input type="text" id="a" onblur="ch(this)"><br>   <!--onblur:포커스를 잃었다-->
+    전화번호 <input type="text"><br>
+</form>
+<script>
+    
+</script>
+</body>
+</html>
+</body>
+</html>
