@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+ <style>
+    span{
+        display: inline;
+        width:30px;
+        border:20px solid green;
+    }
+    </style>
+<script>
+    
+</script>
+</head>
+<body>
+    <span>안녕하세요</span>
+    <span>하이</span>
+<script>
+    
+
+</script>
+</body>
+</html>
