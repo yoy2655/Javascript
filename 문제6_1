@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    //2.
+function result(r){ //여기서 r은 자기자신이니까 label이다
+ //var pa=r.parentElement.innerHTML;  //콘텐츠니까 태그 사이에 있는 거 태그까지 내용이 다나옴
+ var pa=r.parentElement.innerText;  //텍스트만 나옴
+ var index=pa.indexOf("="); //문자 위치 찾기    (3,5,7)이 나온다
+ 
+ r.innerText=eval(pa.slice(0,index-1)); //답에 계산결과를 띄우겠다는 뜻이다...ㅜㅜ
+ 
+}
+</script>
+</head>
+<body>
+    <!--1.-->
+    <h2>라면을 끓이는 순서</h2>
+    <hr>
+    <ol type='A' onclick="this.style.backgroundColor='yellow'">
+        <li>물을 끓인다.</li>
+        <li>라면과 스프를 넣는다.</li>
+        <li>계란을 넣는다.</li>
+        <li>얌얌맛있게 먹는다.</li>        
+</ol>
+<!--2.-->
+<h2>계산해봅시다.</h2>
+<hr>
+<ul>
+    <li>3 + 4 = <label onclick="result(this)">답</label></li>
+    <li>5 + 20 + 60 = <label onclick="result(this)">답</label></li>
+    <li>20 / 5 - 4 * 5 = <label onclick="result(this)">답</label></li>
+</ul>
+
+</ul>
+<script>
+    //1.
+     var n=document.getElementsByTagName("li");
+     for(var i=0; i<4; i++){  //복수개니까 for문을 써준다
+        var a=n[i];
+        a.style.color='green';
+      }
+
+</script>
+
+
+</body>
+</html>
+</body>
+</html>
