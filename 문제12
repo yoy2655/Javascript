@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <label>5*3</label><input type="text"><br>
+    <label>1+2*3</label><input type="text"><br>
+    <label>12*2</label><input type="text"><br>
+
+    <button onclick="re()">결과</button><span id="result"></span>
+    <script>
+        function re(){  //실제 답과 내가 입력한 답이 맞는지 확인해서 틀리면 
+            //수식에 취소선 출력, 맞은 답의 개수 출력
+
+            var q=document.getElementsByTagName("label");
+            var n=document.getElementsByTagName("input");
+            var cnt=0;
+            for(var i=0; i<q.length; i++){
+                if(eval(q[i].innerText)==n[i].value){
+                    cnt++;
+                }
+                else{
+                    q[i].style.textDecoration="line-through";
+                }
+            }
+            document.getElementById("result").innerHTML=cnt;
+        }
+    </script>
+</body>
+</html>
+
