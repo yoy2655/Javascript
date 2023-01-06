@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    식<input type="text" id="aa">
+    값<input type="text" id="bb">
+    <input type="button" value="계산" onclick="calcu()">
+<script>
+    function calcu(){
+        var a=document.getElementById("aa");
+        var b=document.getElementById("bb");
+        b.value=eval(a.value);
+    }
+</script>
+</body>
+</html>
