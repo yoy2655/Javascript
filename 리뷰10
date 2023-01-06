@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <ul>
+        <li>데이터베이스</li>
+        <li>빅데이터</li>
+        <li>웹스래핑</li>
+        <li>스프링</li>
+    </ul>
+<script>
+    var d=document.getElementsByTagName("li");
+    for(var p of d){    //foreach문이랑 같다
+        p.addEventListener("click",function(){
+            this.style.fontSize="1.2em";        
+        })
+    }
+    
+</script>
+</body>
+</html>
