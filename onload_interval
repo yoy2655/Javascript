@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <p id="t"></p>
+<script>
+    //프로그래밍 언어
+    //자바스크립트
+    //=>실행 전에 에러 체크하지 않고 실행하는 인터프리터 언어
+    //=>작성 위치에 따라 오류날 수 있음
+    
+    //window.onload
+    //문서가 준비된 상황만 되면
+    //문서앞에 선언해도 상관없게끔 실행
+    window.onload=function(){   //onload:로딩된 이후에 실행
+        setInterval(function(){
+            var n=new Date();
+            var t=n.getHours()+"시"+n.getMinutes()+"분"+n.getSeconds()+"초";
+            document.getElementById("t").innerHTML=t;},1000)};
+
+    
+</script>
+</body>
+</html>
