@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <a href="javascript:a('http://www.naver.com')">네이버</a>
+<script>
+function a(url){
+    window.open(url,"me","width=400,height=300");
+}
+    
+</script>
+</body>
+</html>
