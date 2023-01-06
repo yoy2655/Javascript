@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <p id="t">
+<script>
+    window.onload=function(){
+        setInterval(function(){
+             var n=new Date();
+             var m=setTimeout(function(){
+                document.write(n.toLocaleString());
+             },0);
+
+             setTimeout(function(){
+                clearTimeout(m);
+                document.body.innerHTML="";
+             },1000);
+        },1000);
+    }
+    
+</script>
+</body>
+</html>
