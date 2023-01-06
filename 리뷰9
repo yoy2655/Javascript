@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <p onclick="ch()">뭐 먹고싶니?</p>
+    <p id="w"></p>
+
+<script>
+    function ch(){
+        var a=prompt("써");
+        var b=document.getElementById("w");
+        b.innerHTML=a;
+    }
+</script>
+</body>
+</html>
