@@ -13,6 +13,9 @@
     var t=setInterval("on()",200);
     //0.2초 주기로 on함수를 호출한다!!
 
+    n.onclick=function(e){
+        clearInterval(t);//타이머 해제
+    }
     function on(){
         var a=n.innerHTML;
         var b=a.substr(0,1);//자
