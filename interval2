@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body>
+    <div id="aa">자바스크립트 넘나 재밌는 것</div>
+<script>
+    var n=document.getElementById("aa");
+    var t=setInterval("on()",200);
+    //0.2초 주기로 on함수를 호출한다!!
+
+    function on(){
+        var a=n.innerHTML;
+        var b=a.substr(0,1);//자
+        var c=a.substr(1,a.length-1);
+        a=c+b;
+        n.innerHTML=a;
+    }
+</script>
+</body>
+</html>
