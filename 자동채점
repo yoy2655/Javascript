@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<title>자동채점_타임어택</title>
+<style>
+.op {
+    float: left;
+    width: 90px;
+    margin-left: 30px;
+    }
+    
+    .ans {
+    width: 120px;
+    }
+</style>
+<!--<link rel="stylesheet" href="./timeattack.css">-->
+<!--<script src="./timeattack.js" defer></script>-->
+</head>
+
+<body>
+
+<h2>문제는 자동으로 생성되며, 10초가 지나면 자동 채점</h2>
+
+<h3>남은시간<span class="sec">10</span></h3>
+<hr>
+
+<span class="op"></span> <input type="text" class="ans"> <br>
+<span class="op"></span> <input type="text" class="ans"> <br>
+<span class="op"></span> <input type="text" class="ans"> <br>
+<span class="op"></span> <input type="text" class="ans"> <br>
+<input type="button" value="다시" class="re"> <span class="res"></span>
+
+<script>
+var opEls = documentS.querySelectorAll(".op");
+var ansEls = document.querySelectorAll(".ans");
+var secEl = document.querySelector(".sec");
+var resEl = document.querySelector(".res");
+var reBtnEl = document.querySelector(".re");
+
+var time = 10;
+var ops = new Array("+", "-", "*", "/");
+var num1 = 0;
+var num2 = 0;
+
+window.onload = function () {
+var timer = setInterval(function () {
+secEl.innerText = time--;
+
+if (time < 0) {
+clearInterval(timer);
+
+var o = 0;
+for (var i = 0; i < opEls.length; ++i) {
+if (eval(opEls[i].innerText) === parseInt(ansEls[i].value)) o++;
+else {
+opEls[i].style.textDecoration = "line-through";
+ansEls[i].style.color = "red";
+
+ansEls[i].value = eval(opEls[i].innerText);
+}
+}
+
+resEl.innerText = "정답 : " + o + "개";
+}
+}, 1000);
+};
+
+var op = "";
+for (var i = 0; i < opEls.length; ++i) {
+num1 = Math.floor(Math.random() * 101);
+num2 = Math.floor(Math.random() * 101);
+opEls[i].innerText =
+num1 + " " + ops[Math.floor(Math.random() * 4)] + " " + num2;
+}
+
+reBtnEl.addEventListener("click", function () {
+location.reload();
+});
+</script>
+</body>
+
+</html>
