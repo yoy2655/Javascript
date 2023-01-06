@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CSS3 실습 예제</title>
+<script>
+    
+</script>
+</head>
+<body id="body">
+    
+    <script>
+        var body = document.getElementsByTagName("body")[0];
+        
+        var date = new Date();
+        var day = date.getDay();
+        
+        if (day >= 1 && day <= 3) {
+        body.style.backgroundColor = 'green';
+        } else if (day >= 4 && day <= 5) {
+        body.style.backgroundColor = 'blue';
+        }
+        </script>
+</body>
+</html>
+
